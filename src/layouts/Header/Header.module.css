@@ -1,0 +1,107 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: var(--header-height);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon { font-size: 1.5rem; }
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.notifWrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.notifIcon { font-size: 1.2rem; }
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f05252;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+}
+
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.userName {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.userRole {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.logoutBtn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #ffffff;
+  transition: background-color 0.15s;
+}
+
+.logoutBtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
